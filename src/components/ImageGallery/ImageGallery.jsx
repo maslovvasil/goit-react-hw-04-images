@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import ImageGalleryItem from 'components/ImageGalleryItem';
+import ImageGalleryItem from 'components/ImageGallery';
 
 import { Gallery } from './ImageGallery.styled';
 

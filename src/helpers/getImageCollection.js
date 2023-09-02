@@ -5,7 +5,7 @@ const getImageCollection = async (search, page) => {
   try {
     const data = await axios.get('https://pixabay.com/api/', {
       params: {
-        key: '27389649-f5df395754432ead8290902de',
+        key: '27808107-8f1452157e5133d5097f72be5',
         q: search,
         page: page,
         per_page: 12,

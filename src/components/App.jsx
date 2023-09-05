@@ -54,8 +54,12 @@ export const App = () => {
   }, [searchKey, page]);
 
   const onFormSubmitHandler = ({ searchInput }) => {
-    setSearchKey(searchInput);
-    setGallery([]);
+    if(searchKey === searchInput) {
+      alert(`Ви вже шукаєте за запитом "${searchInput}"`);
+    } else {
+      setSearchKey(searchInput);
+      setGallery([]);
+    }
   };
 
   const onLoadButtonClick = () => {

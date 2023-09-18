@@ -1,4 +1,4 @@
-export default async function fetchImages(searchKey, page) {
+ async function fetchImages(searchKey, page) {
   const axios = require('axios');
 
   const API_KEY = '27808107-8f1452157e5133d5097f72be5';
@@ -20,5 +20,7 @@ export default async function fetchImages(searchKey, page) {
   return returnedImages;
 }
 
+export { fetchImages }
 
 // key: '27808107-8f1452157e5133d5097f72be5',
+

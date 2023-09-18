@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import fetchImages from 'services/pixabay-api';
+import { fetchImages } from 'services/pixabay-api';
 import Searchbar from './Searchbar';
 import ImageGallery from './ImageGallery';
 import Button from './Button';
@@ -59,6 +59,7 @@ export const App = () => {
     } else {
       setSearchKey(searchInput);
       setGallery([]);
+      setPage(1);
     }
   };
 
@@ -72,6 +73,7 @@ export const App = () => {
   };
 
   const closeModal = evt => {
+    evt.preventDefault();
     setShowModal(false);
   };
 
